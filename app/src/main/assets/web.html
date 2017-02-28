@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function onCall(){
+           var num = document.getElementById("num").value;
+           window.android.callphone(num);
+        }
+        function onSend(){
+           var msg = document.getElementById("msg").value;
+           window.android.sendMsg(msg);
+        }
+    </script>
+</head>
+<body>
+Tel:<input type="number" id="num"><br>
+Massage:<input type="text" id="msg"><br>
+ <input type="button" value="call_phone" onclick="onCall()"/><br>
+<input type="button" value="send_msg" onclick="onSend()" />
+</body>
+</html>
